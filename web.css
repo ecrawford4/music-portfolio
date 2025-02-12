@@ -1,0 +1,696 @@
+/* debug styling */
+/* * {
+  outline: dotted 1px red;
+} */
+
+
+/* Overwrite default browser styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* width: 100%;
+  height: 100%;
+  overflow: hidden; */
+}
+/* Container to hold the left pane and main content */
+.container {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(240, 240, 240, 0.9); /* Slightly more transparent background */
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* body styling */
+body {
+  font-family: 'Arial', sans-serif; /* Modern font */
+  background-image: url("assets/1670284497378674.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* Left pane styling */
+.left-pane {
+  font-family: 'Courier New', monospace; /* Modern monospace font */
+  position: sticky;
+  top: 0;
+  right: 0;
+  width: 12em; /* Slightly wider */
+  background-color: #333333; /* Darker background */
+  padding: 1rem;
+  height: 100vh;
+  box-shadow: -2em 0 5em rgba(0, 0, 0, 0.3); /* Stronger shadow */
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex-shrink: 0;
+}
+
+.left-pane p {
+  color: #ffffff; /* Lighter text color */
+  font-size: 1.2em;
+  padding: 0;
+  margin-left: 0;
+}
+
+.left-pane a {
+  font-size: 1.5em;
+}
+
+/* Links inside the left pane */
+.left-pane ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.left-pane ul li {
+  margin-bottom: 0.8em;
+}
+
+.left-pane ul li a {
+  color: #ffffff;
+  font-size: 1.5em;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.left-pane ul li a:hover {
+  color: #ff6347; /* Modern hover color */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Main content styling */
+main {
+  flex-grow: 1;
+  max-width: 50rem; /* Wider content area */
+  margin: auto;
+  padding: 1rem; /* Add padding */
+  overflow-y: auto;
+  box-sizing: border-box;
+  background-color: #ffffff; /* Light background color */
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+figure {
+  max-width: 40rem; /* Wider figure */
+  margin: 0;
+}
+
+h1 {
+  width: 80%;
+  color: #333333; /* Darker text color */
+  margin: 1.25em auto;
+  text-align: center;
+  font-size: 3em; /* Slightly smaller */
+  margin-top: 0.3125em;
+  margin-bottom: 0em;
+}
+
+h2 {
+  width: 80%;
+  color: #333333;
+  margin: 1.25em auto;
+  text-align: left;
+  font-size: 2em;
+}
+
+h2.music-folio {
+  font-size: 1.4em;
+}
+
+h3 {
+  width: 80%;
+  color: #333333;
+  margin: 1.25em auto;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+h4 {
+  width: 80%;
+  color: #333333;
+  margin: 1.25em auto;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+/* Paragraph styling with the same width as the image */
+p {
+  font-size: 18px;
+  width: 80%;
+  margin: 1.25em auto;
+  color: #333333;
+  text-align: justify;
+}
+
+p.contact {
+  text-align: center;
+  width: 58%;
+}
+
+div.contact {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+/* Styling for the links inside the contact div */
+div.contact a {
+  display: inline-block;
+  font-size: 1.2em;
+  margin: 5px;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+div.contact a:hover {
+  transform: scale(1.1);
+  color: #ff6347; /* Modern hover color */
+}
+
+div.contact a img {
+  transition: transform 0.3s ease;
+}
+
+div.contact a img:hover {
+  transform: scale(1.1);
+}
+
+p.content-with-image {
+  width: 100%;
+}
+
+/* Styling for the copyright paragraph */
+p.copyright {
+  font-family: 'Courier New', monospace;
+  font-size: 0.75em;
+  color: #888888;
+  text-align: center;
+  position: bottom;
+  bottom: 0em;
+  width: 100%;
+  margin: 0;
+}
+
+/* Paragraph styling inside details */
+details p {
+  width: auto;
+  margin: 0.3em 0;
+  color: #666666;
+  text-align: justify;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+}
+
+a {
+  color: #333333;
+  font-family: 'Courier New', monospace;
+  text-decoration: underline;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+  color: #ff6347;
+  transform: scale(1.1);
+}
+
+/* Styling for details element */
+details {
+  background-color: #333333;
+  border: 0em solid #222222;
+  border-radius: 0.3125em;
+  padding: 0.625em;
+  margin: 1.25em auto;
+  width: 80%;
+  box-shadow: 0.125em 0.125em 0.3125em rgba(0, 0, 0, 0.3); /* Stronger shadow */
+}
+
+/* Styling for links inside details element */
+details a {
+  color: #666666;
+  text-decoration: underline;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Styling for summary element */
+details summary {
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.3125em;
+  outline: none;
+}
+
+details[open] summary {
+  border-bottom: 0em solid #333333;
+  margin-bottom: 0.625em;
+}
+
+/* Style for the image */
+img {
+  display: block;
+  margin: 1.25em auto;
+  border: 0em solid #333333;
+  border-radius: 0.625em;
+  box-shadow: 0.125em 0 0.3125em rgba(0.1, 0.1, 0.1, 0.3); /* Stronger shadow */
+}
+
+img.svg-decoration {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: 0 0 0 0;
+}
+
+img.social-badge {
+  border-radius: 0em;
+  margin: 0.1em;
+  box-shadow: 0 0 0 0;
+}
+
+/* Styling for code blocks */
+code {
+  font: 'Courier New', monospace;
+  background-color: #f4f4f4;
+  padding: 0.3125em;
+  border-radius: 0.3125em;
+  white-space: pre;
+  width: 60%;
+  display: block;
+  margin: 0.625em auto;
+}
+
+/* Styling for blockquote */
+blockquote {
+  padding: 0.625em;
+  border-right: 0.3125em solid #333333;
+  margin: 1.25em auto;
+  width: 60%;
+  max-width: 32.8125em;
+  text-align: right;
+}
+
+/* Styling for tables */
+table {
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 32.8125em;
+  margin: 1.25em auto;
+}
+
+th,
+td {
+  border: 0.0625em solid #333333;
+  padding: 0.625em;
+  text-align: center;
+}
+
+th {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+}
+
+/* Grid container styling */
+.grid-container,
+.pinned-project-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.625em;
+  margin-top: 1.25em;
+  max-width: 32.8125em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.music-folio-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.625em;
+  width: 100%;
+  margin: auto;
+  max-width: fit-content;
+}
+
+.grid-item {
+  background-color: #333333;
+  border: 0em solid #222222;
+  border-radius: 0.3125em;
+  padding: 0.625em;
+  margin: 0.625em auto;
+  width: 100%;
+  max-width: 12.5em;
+  box-shadow: 0.125em 0.125em 0.3125em rgba(0, 0, 0.3, 0.3); /* Stronger shadow */
+}
+
+.grid-container a,
+.pinned-project-grid-container a,
+.music-folio-grid-container a {
+  color: #333333;
+  font-size: 1.2em;
+  text-decoration: underline;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.grid-container a:hover,
+.pinned-project-grid-container a:hover,
+.music-folio-grid-container a:hover {
+  background-color: #ff6347;
+  color: #333333;
+  transform: scale(1.1);
+}
+
+details h4 {
+  color: #666666;
+  text-align: left;
+  margin-bottom: 0;
+  margin-left: 1.25em;
+}
+
+figure.contact {
+  margin: auto;
+  padding-bottom: 2.5rem;
+}
+
+/* Styling for social badge links */
+div.contact a.social-badge,
+a.music-folio-badge {
+  display: inline-block;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 0.625em 0.9375em;
+  border-radius: 0.3125em;
+  text-decoration: none;
+  margin: 0.3125em;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+a.music-folio-badge {
+  text-align: center;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 0.875em;
+}
+
+a.music-folio-badge:hover {
+  background-color: #ff6347;
+  color: #333333;
+  transform: scale(1.05);
+}
+
+div.contact a.social-badge:hover {
+  background-color: #ff6347;
+  color: #333333;
+  transform: scale(1.05);
+}
+
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 1.25em auto;
+  border: 0em solid #333333;
+  border-radius: 0.625em;
+  box-shadow: 0.125em 0 0.3125em rgba(0.1, 0.1, 0.1, 0.3); /* Stronger shadow */
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #333333;
+  color: #ff6347;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+audio::-webkit-media-controls-panel:hover {
+  background-color: #ff6347;
+  color: #333333;
+}
+
+.music-folio {
+  text-align: center;
+  padding-top: 0em;
+  padding-left: 0em;
+  margin: auto;
+}
+
+.music-folio-grid-item {
+  padding: 0;
+  margin: auto;
+  width: 100%;
+  max-width: 18.75em;
+}
+
+.content-with-image {
+  max-width: 32.8125em;
+  margin: 1.25em auto;
+}
+
+.content-with-image img {
+  float: right;
+  margin-left: 1.25em;
+  margin-bottom: 0.625em;
+  border-radius: 0.625em;
+  box-shadow: 0.125em 0 0.3125em rgba(0.1, 0.1, 0.1, 0.3); /* Stronger shadow */
+  max-width: 12.5em;
+  height: auto;
+}
+
+/* Hide copyright paragraph on mobile */
+@media (min-width: 801px) {
+  footer {
+    display: none;
+  }
+
+  p.copyright-mobile {
+    display: none;
+  }
+}
+
+/* testing mobile style */
+@media (max-width: 800px) {
+  * {
+    color: inherit;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3, h4 {
+    font-size: 1.2em;
+  }
+
+  p, a {
+    font-size: 1em;
+  }
+
+  main {
+    margin-bottom: 2rem; /* Add space below main */
+  }
+
+  footer {
+    font-family: monospace;
+    width: 100%;
+    background-color: #6e6863;
+    padding: 1rem;
+    box-shadow: 0 -2em 5em rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    color: #cfc3ae;
+  }
+
+  .left-pane {
+    width: 100%;
+    height: auto;
+    position: relative;
+    box-shadow: none;
+  }
+
+  .left-pane ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em; /* Add gap between items */
+  }
+
+  .left-pane ul li {
+    flex: 1 1 20%; /* Adjust the width of each item */
+    margin-bottom: 0em;
+  }
+  
+  p.copyright {
+    display: none;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  main {
+    width: 100%;
+    max-width: none;
+    height: auto;
+  }
+
+  .grid-container, .pinned-project-grid-container, .music-folio-grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-item {
+    max-width: 100%;
+  }
+
+  #current-session, #real-time-clock {
+    display: none;
+  }
+}
+
+/* Google Fonts */
+
+.atkinson-hyperlegible-regular {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.atkinson-hyperlegible-bold {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.atkinson-hyperlegible-regular-italic {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.atkinson-hyperlegible-bold-italic {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.spectral-extralight {
+  font-family: "Spectral", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.spectral-light {
+  font-family: "Spectral", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.spectral-regular {
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.spectral-medium {
+  font-family: "Spectral", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.spectral-semibold {
+  font-family: "Spectral", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.spectral-bold {
+  font-family: "Spectral", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.spectral-extrabold {
+  font-family: "Spectral", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.spectral-extralight-italic {
+  font-family: "Spectral", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.spectral-light-italic {
+  font-family: "Spectral", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.spectral-regular-italic {
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.spectral-medium-italic {
+  font-family: "Spectral", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.spectral-semibold-italic {
+  font-family: "Spectral", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.spectral-bold-italic {
+  font-family: "Spectral", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.spectral-extrabold-italic {
+  font-family: "Spectral", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.playfair-display-regular {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.noto-sans-display-extra-thin {
+  font-family: "Noto Sans Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+  "wdth" 62.5;
+}
+
+.bodoni-moda-regular {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}

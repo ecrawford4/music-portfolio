@@ -364,6 +364,13 @@ th {
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
+.music-folio-grid-item img {
+  width: 90%;
+  height: auto;
+  border-radius: 0.3125em;
+  box-shadow: 0; /* Stronger shadow */
+}
+
 .grid-container a:hover,
 .pinned-project-grid-container a:hover,
 .music-folio-grid-container a:hover {

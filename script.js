@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const template = `
           <figure class="music-folio-grid-item">
             <h2 class="music-folio spectral-light-italic">${key.title}</h2>
-            <img src="${key.imageSrc}" alt="${key.altTxt}" class="music-folio-image">
+            <img src="${key.imgSrc}" alt="${key.altTxt}" class="music-folio-image">
             <audio src="${key.audioSrc}" controls></audio>
             <a class="music-folio-badge" target="_blank" href="${key.scoreSrc}">View Score</a>
           </figure>

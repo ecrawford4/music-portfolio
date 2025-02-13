@@ -453,7 +453,7 @@ audio::-webkit-media-controls-panel:hover {
 }
 
 .music-folio-grid-item {
-  padding: 0;
+  padding: .5em;
   margin: auto;
   width: 100%;
   max-width: 18.75em;

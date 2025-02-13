@@ -457,10 +457,12 @@ audio::-webkit-media-controls-panel:hover {
   margin: auto;
   width: 100%;
   max-width: 18.75em;
+  max-height: 100%;
   border: #6e6863;
   border-radius: 0.3125em;
   box-shadow: 0.125em 0.125em 0.3125em rgba(0.1, 0.1, 0.1, 0.3); /* Stronger shadow */
-  border-width: 5px;
+  border: 5px;
+  overflow: hidden; /* Ensure content does not overflow */
 }
 
 .content-with-image {

@@ -297,26 +297,13 @@ th {
 .music-folio-grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background-color: #cfc3ae;
+  background-color: #ffffff;
   gap: 0.625em;
   width: 100%;
   margin: auto;
   max-width: fit-content;
 }
 
-.grid-item {
-  background-color: #333333;
-  border: 0em solid #222222;
-  border-radius: 0.3125em;
-  padding: 0.625em;
-  margin: 0.625em auto;
-  width: 100%;
-  max-width: 12.5em;
-  box-shadow: 0.125em 0.125em 0.3125em rgba(0, 0, 0.3, 0.3); /* Stronger shadow */
-}
-
-.grid-container a,
-.pinned-project-grid-container a,
 .music-folio-grid-container a {
   color: #333333;
   font-size: 1.2em;
@@ -331,8 +318,6 @@ th {
   box-shadow: 0; /* Stronger shadow */
 }
 
-.grid-container a:hover,
-.pinned-project-grid-container a:hover,
 .music-folio-grid-container a:hover {
   background-color: #ff6347;
   color: #333333;
@@ -380,7 +365,7 @@ audio::-webkit-media-controls-panel {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-a.music-folio-badge audio::-webkit-media-controls-panel:hover {
+a.music-folio-badge, audio::-webkit-media-controls-panel:hover {
   background-color: #ff6347;
   color: #333333;
 }
@@ -402,6 +387,7 @@ a.music-folio-badge:hover {
   width: 100%;
   max-width: 18.75em;
   max-height: 100%;
+  background-color: #cfc3ae;
   border: #6e6863;
   border-radius: 0.3125em;
   box-shadow: 0.125em 0.125em 0.3125em rgba(0.1, 0.1, 0.1, 0.3); /* Stronger shadow */
@@ -506,7 +492,7 @@ a.music-folio-badge:hover {
     height: auto;
   }
 
-  .grid-container, .pinned-project-grid-container, .music-folio-grid-container {
+  .music-folio-grid-container {
     grid-template-columns: 1fr;
   }
 

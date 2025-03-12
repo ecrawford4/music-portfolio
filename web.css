@@ -51,7 +51,7 @@ body {
 }
 
 .left-pane p {
-  color: #ffffff; /* Lighter text color */
+  color: #ffffff; 
   font-size: 1.2em;
   padding: 0;
   margin-left: 0;
@@ -59,6 +59,13 @@ body {
 
 .left-pane a {
   font-size: 1.5em;
+}
+
+.left-pane a.contact {
+  color: #ffffff; 
+  font-size: 1.2em;
+  padding: 0;
+  margin-left: 0;
 }
 
 /* Links inside the left pane */
@@ -79,8 +86,7 @@ body {
 }
 
 .left-pane ul li a:hover {
-  color: #ff6347; /* Modern hover color */
-  transform: scale(1.05); /* Slight zoom on hover */
+  color: #ff6347; 
 }
 
 /* Main content styling */
@@ -150,45 +156,8 @@ p {
   text-align: justify;
 }
 
-p.contact {
-  text-align: center;
-  width: 58%;
-}
-
-div.contact {
-  text-align: center;
-  width: 50%;
-  margin: auto;
-}
-
-/* Styling for the links inside the contact div */
-div.contact a {
-  display: inline-block;
-  font-size: 1.2em;
-  margin: 5px;
-  text-decoration: none;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-div.contact a:hover {
-  transform: scale(1.1);
-  color: #ff6347; /* Modern hover color */
-}
-
-div.contact a img {
-  transition: transform 0.3s ease;
-}
-
-div.contact a img:hover {
-  transform: scale(1.1);
-}
-
-p.content-with-image {
-  width: 100%;
-}
-
 /* Styling for the copyright paragraph */
-p.copyright {
+p.copyright, p.contact {
   font-family: 'Courier New', monospace;
   font-size: 0.75em;
   color: #888888;
@@ -197,16 +166,6 @@ p.copyright {
   bottom: 0em;
   width: 100%;
   margin: 0;
-}
-
-/* Paragraph styling inside details */
-details p {
-  width: auto;
-  margin: 0.3em 0;
-  color: #666666;
-  text-align: justify;
-  padding-left: 1.25em;
-  padding-right: 1.25em;
 }
 
 a {
@@ -387,13 +346,7 @@ details h4 {
   margin-left: 1.25em;
 }
 
-figure.contact {
-  margin: auto;
-  padding-bottom: 2.5rem;
-}
-
 /* Styling for social badge links */
-div.contact a.social-badge,
 a.music-folio-badge {
   display: inline-block;
   background-color: #333333;
@@ -403,9 +356,6 @@ a.music-folio-badge {
   text-decoration: none;
   margin: 0.3125em;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-}
-
-a.music-folio-badge {
   text-align: center;
   display: block;
   width: fit-content;
@@ -413,17 +363,6 @@ a.music-folio-badge {
   font-size: 0.875em;
 }
 
-a.music-folio-badge:hover {
-  background-color: #ff6347;
-  color: #333333;
-  transform: scale(1.05);
-}
-
-div.contact a.social-badge:hover {
-  background-color: #ff6347;
-  color: #333333;
-  transform: scale(1.05);
-}
 
 iframe {
   display: block;
@@ -441,9 +380,13 @@ audio::-webkit-media-controls-panel {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-audio::-webkit-media-controls-panel:hover {
+a.music-folio-badge audio::-webkit-media-controls-panel:hover {
   background-color: #ff6347;
   color: #333333;
+}
+
+a.music-folio-badge:hover {
+  transform: scale(1.05);
 }
 
 .music-folio {
@@ -518,7 +461,7 @@ audio::-webkit-media-controls-panel:hover {
     margin-bottom: 2rem; /* Add space below main */
   }
 
-  footer {
+  /* footer {
     font-family: monospace;
     width: 100%;
     background-color: #6e6863;
@@ -529,7 +472,7 @@ audio::-webkit-media-controls-panel:hover {
     left: 0;
     text-align: center;
     color: #cfc3ae;
-  }
+  } */
 
   .left-pane {
     width: 100%;

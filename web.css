@@ -338,6 +338,7 @@ th {
 .music-folio-grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  background-color: #cfc3ae;
   gap: 0.625em;
   width: 100%;
   margin: auto;
@@ -568,10 +569,6 @@ audio::-webkit-media-controls-panel:hover {
 
   .grid-item {
     max-width: 100%;
-  }
-
-  #current-session, #real-time-clock {
-    display: none;
   }
 }
 

@@ -7,40 +7,41 @@
 /* Overwrite default browser styles */
 html,
 body {
-  margin: 0;
-  padding: 0;
-  /* width: 100%;
-  height: 100%;
-  overflow: hidden; */
-}
-/* Container to hold the left pane and main content */
-.container {
+  font-family: 'Arial', sans-serif; /* Modern font */
   display: flex;
   margin: 0;
   padding: 0;
   height: 100vh;
   width: 100vw;
-  background-color: rgba(240, 240, 240, 0.9); /* Slightly more transparent background */
+  background-color: rgba(240, 240, 240);
   background-size: cover;
   overflow: hidden;
 }
 
-/* body styling */
-body {
-  font-family: 'Arial', sans-serif; /* Modern font */
-  background-image: url("assets/1670284497378674.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+br {
+  display: block;
+  content: "";
+  border-top: 2px solid #ad9999;
+  margin: 1em 0;
+}
+
+footer br {
+  border-top: 1px solid #ad9999; /* Narrower border in the footer */
+  margin: 0.5em;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 1em; 
 }
 
 /* Left pane styling */
 .left-pane {
-  font-family: 'Courier New', monospace; /* Modern monospace font */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   position: sticky;
   top: 0;
   right: 0;
-  width: 12em; /* Slightly wider */
+  width: 8em; /* Slightly wider */
   background-color: #333333; /* Darker background */
   padding: 1rem;
   height: 100vh;
@@ -52,40 +53,20 @@ body {
 
 .left-pane p {
   color: #ffffff; 
-  font-size: 1.2em;
+  font-size: 1em;
   padding: 0;
   margin-left: 0;
 }
 
 .left-pane a {
   font-size: 1.5em;
-}
-
-.left-pane a.contact {
-  color: #ffffff; 
-  font-size: 1.2em;
-  padding: 0;
-  margin-left: 0;
-}
-
-/* Links inside the left pane */
-.left-pane ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.left-pane ul li {
-  margin-bottom: 0.8em;
-}
-
-.left-pane ul li a {
-  color: #ffffff;
-  font-size: 1.5em;
+  color: #ad9999; /* Lighter text color */
   text-decoration: none;
   transition: color 0.3s ease, transform 0.3s ease;
+
 }
 
-.left-pane ul li a:hover {
+.left-pane a:hover {
   color: #ff6347; 
 }
 
@@ -159,57 +140,25 @@ p {
 /* Styling for the copyright paragraph */
 p.copyright, p.contact {
   font-family: 'Courier New', monospace;
-  font-size: 0.75em;
+  font-size: .75em;
   color: #888888;
   text-align: center;
   position: bottom;
   bottom: 0em;
-  width: 100%;
+  width: auto;
   margin: 0;
+  padding: 0;
 }
 
-a {
-  color: #333333;
-  font-family: 'Courier New', monospace;
-  text-decoration: underline;
+a.copyright, a.contact {
+  color: #888888;
+  text-decoration: none;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-a:hover {
-  color: #ff6347;
-  transform: scale(1.1);
-}
-
-/* Styling for details element */
-details {
-  background-color: #333333;
-  border: 0em solid #222222;
-  border-radius: 0.3125em;
-  padding: 0.625em;
-  margin: 1.25em auto;
-  width: 80%;
-  box-shadow: 0.125em 0.125em 0.3125em rgba(0, 0, 0, 0.3); /* Stronger shadow */
-}
-
-/* Styling for links inside details element */
-details a {
-  color: #666666;
-  text-decoration: underline;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-/* Styling for summary element */
-details summary {
-  color: #ffffff;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 0.3125em;
-  outline: none;
-}
-
-details[open] summary {
-  border-bottom: 0em solid #333333;
-  margin-bottom: 0.625em;
+a.copyright:hover, a.contact:hover {
+  color: #ff6347; /* Change to a different color on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 /* Style for the image */
@@ -221,61 +170,6 @@ img {
   box-shadow: 0.125em 0 0.3125em rgba(0.1, 0.1, 0.1, 0.3); /* Stronger shadow */
 }
 
-img.svg-decoration {
-  margin: 0;
-  padding: 0;
-  border-radius: 0;
-  box-shadow: 0 0 0 0;
-}
-
-img.social-badge {
-  border-radius: 0em;
-  margin: 0.1em;
-  box-shadow: 0 0 0 0;
-}
-
-/* Styling for code blocks */
-code {
-  font: 'Courier New', monospace;
-  background-color: #f4f4f4;
-  padding: 0.3125em;
-  border-radius: 0.3125em;
-  white-space: pre;
-  width: 60%;
-  display: block;
-  margin: 0.625em auto;
-}
-
-/* Styling for blockquote */
-blockquote {
-  padding: 0.625em;
-  border-right: 0.3125em solid #333333;
-  margin: 1.25em auto;
-  width: 60%;
-  max-width: 32.8125em;
-  text-align: right;
-}
-
-/* Styling for tables */
-table {
-  border-collapse: collapse;
-  width: 90%;
-  max-width: 32.8125em;
-  margin: 1.25em auto;
-}
-
-th,
-td {
-  border: 0.0625em solid #333333;
-  padding: 0.625em;
-  text-align: center;
-}
-
-th {
-  background-color: #333333;
-  color: #ffffff;
-}
-
 /* Hide scrollbar for Chrome, Safari, and Opera */
 ::-webkit-scrollbar {
   display: none;
@@ -283,17 +177,6 @@ th {
 }
 
 /* Grid container styling */
-.grid-container,
-.pinned-project-grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.625em;
-  margin-top: 1.25em;
-  max-width: 32.8125em;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .music-folio-grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -348,7 +231,7 @@ a.music-folio-badge {
   font-size: 0.875em;
 }
 
-
+/* Styling for audio elements */
 iframe {
   display: block;
   margin-left: auto;
@@ -410,18 +293,25 @@ a.music-folio-badge:hover {
   height: auto;
 }
 
-/* Hide copyright paragraph on mobile */
-@media (min-width: 801px) {
-  footer {
-    display: none;
-  }
+footer {
+  font-family: monospace;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #252423;
+  padding: 1rem;
+  box-shadow: 0 -2em 5em rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  color: #cfc3ae;
+} 
 
-  p.copyright-mobile {
-    display: none;
-  }
-}
 
-/* testing mobile style */
+/* alternate mobile styling */
 @media (max-width: 800px) {
   * {
     color: inherit;
@@ -447,7 +337,7 @@ a.music-folio-badge:hover {
     margin-bottom: 2rem; /* Add space below main */
   }
 
-  /* footer {
+  footer {
     font-family: monospace;
     width: 100%;
     background-color: #6e6863;
@@ -458,7 +348,7 @@ a.music-folio-badge:hover {
     left: 0;
     text-align: center;
     color: #cfc3ae;
-  } */
+  } 
 
   .left-pane {
     width: 100%;

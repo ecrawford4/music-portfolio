@@ -132,8 +132,31 @@ p {
   width: 80%;
   margin: 1.25em auto;
   color: #333333;
-  text-align: justify;
+  text-align: right;
 }
+
+/* Container for text elements to styliscitally mis-align them */
+div.text-container {
+  width: 80%;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-content: flex-end;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+div.text-container p {
+  font-size: 18px;
+  margin-right: 1em;
+  width: 65%;
+  color: #333333;
+  margin-left: auto;
+  text-align: right;
+}
+
 
 /* Styling for the copyright paragraph */
 p.copyright, p.contact {
@@ -203,13 +226,6 @@ img {
   background-color: #ff6347;
   color: #333333;
   transform: scale(1.1);
-}
-
-details h4 {
-  color: #666666;
-  text-align: left;
-  margin-bottom: 0;
-  margin-left: 1.25em;
 }
 
 /* Styling for social badge links */

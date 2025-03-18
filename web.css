@@ -15,6 +15,9 @@ body {
   width: 100vw;
   background-color: rgba(240, 240, 240);
   background-size: cover;
+  position: sticky;
+  top: 0;
+  /* background-image: linear-gradient(to right, #ff7e5f, #feb47b); /* Add a gradient background */
 }
 
 br {
@@ -75,6 +78,7 @@ main {
   max-width: 50rem; /* Wider content area */
   margin: auto;
   padding: 1rem; /* Add padding */
+  padding-bottom: 4em;
   box-sizing: border-box;
   background-color: #ffffff; /* Light background color */
   height: 100vh;
@@ -114,7 +118,7 @@ h3 {
   width: 80%;
   color: #333333;
   margin: 1.25em auto;
-  text-align: center;
+  text-align: left;
   font-size: 1.5em;
 }
 
@@ -151,7 +155,7 @@ div.text-container {
 div.text-container p {
   font-size: 18px;
   margin-right: 1em;
-  width: 65%;
+  width: 85%;
   color: #333333;
   margin-left: auto;
   text-align: right;

@@ -355,19 +355,6 @@ footer {
     margin-bottom: 2rem; /* Add space below main */
   }
 
-  footer {
-    font-family: monospace;
-    width: 100%;
-    background-color: #6e6863;
-    padding: 1rem;
-    box-shadow: 0 -2em 5em rgba(0, 0, 0, 0.1);
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    color: #cfc3ae;
-  } 
-
   .left-pane {
     width: 100%;
     height: auto;
@@ -390,7 +377,7 @@ footer {
     display: none;
   }
 
-  .container {
+  body {
     flex-direction: column;
   }
 

@@ -178,7 +178,7 @@ img {
 .music-folio-grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background-color: #f0f0f0; /* same as body background color */
+  background-color: #ffffff; /* same as body background color */
   gap: 0.625em;
   width: 100%;
   margin: auto;
@@ -268,7 +268,7 @@ a.music-folio-badge:hover {
   width: 100%;
   max-width: 18.75em;
   max-height: 100%;
-  background-color: #e9dfc9;
+  background-color: #f0f0f0;
   border: #6e6863;
   border-radius: 0.3125em;
   box-shadow: 0.125em 0.125em 0.3125em rgba(0.1, 0.1, 0.1, 0.3); /* Stronger shadow */

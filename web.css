@@ -362,6 +362,23 @@ footer {
     box-shadow: none;
   }
 
+  footer {
+    font-family: monospace;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #252423;
+    padding: 1rem;
+    box-shadow: 0 -2em 5em rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    color: #cfc3ae;
+  } 
+
   body {
     flex-direction: column;
   }

@@ -23,13 +23,14 @@ body {
 br {
   display: block;
   content: "\2060"; /* Unicode for a zero-width space */
-  border-top: 2px solid #ad9999;
+  border-top: 1px solid #ad9999;
   border-style: solid;
+  box-shadow: none;
   margin: 1em 0;
 }
 
 footer br {
-  border-top: 2px solid #ad9999; /* Narrower border in the footer */
+  border-top: 1px solid #ad9999; /* Narrower border in the footer */
   border-style: solid;
   content: "\2060";
   margin: 0.5em;

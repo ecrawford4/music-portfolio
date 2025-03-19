@@ -22,13 +22,16 @@ body {
 
 br {
   display: block;
-  content: "";
+  content: "\2060"; /* Unicode for a zero-width space */
   border-top: 2px solid #ad9999;
+  border-style: solid;
   margin: 1em 0;
 }
 
 footer br {
-  border-top: 1px solid #ad9999; /* Narrower border in the footer */
+  border-top: 2px solid #ad9999; /* Narrower border in the footer */
+  border-style: solid;
+  content: "\2060";
   margin: 0.5em;
   margin-top: 0;
   margin-bottom: 0;
@@ -70,6 +73,16 @@ footer br {
 
 .left-pane a:hover {
   color: #ff6347; 
+}
+
+a {
+  color: #ad9999;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+  color: #ff6347; /* Change to a different color on hover */
 }
 
 /* Main content styling */

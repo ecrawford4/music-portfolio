@@ -114,9 +114,11 @@ h1 {
   font-size: 3em; /* Slightly smaller */
   margin-top: 0.3125em;
   margin-bottom: 0em;
+  border-bottom: #ad9999 solid 0.05em; /* Add a border below the heading */
 }
 
 h2 {
+  border-top: #ad9999 solid 0.06em;
   width: 80%;
   color: #333333;
   margin: 1.25em auto;
@@ -129,6 +131,7 @@ h2.music-folio {
 }
 
 h3 {
+  border-top: #ad9999 solid 0.07em;
   width: 80%;
   color: #333333;
   margin: 1.25em auto;
@@ -358,6 +361,7 @@ footer {
   }
 
   h3, h4 {
+    border-top: #333333 solid 0.125em;
     font-size: 1.2em;
   }
 

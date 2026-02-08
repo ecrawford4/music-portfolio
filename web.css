@@ -39,6 +39,22 @@ footer br {
   width: 1em; 
 }
 
+ul, ol {
+  font-size: 1em;
+  width: 80%;
+  margin: 0em auto;
+  color: #333333;
+  list-style: none;
+  padding-left: 0;
+  margin-left: 60%;
+  margin-right: auto;
+}
+
+li {
+  margin: 0.25em 0;
+  text-align: left;
+}
+
 /* Left pane styling */
 .left-pane {
   display: flex;
